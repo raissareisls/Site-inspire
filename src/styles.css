@@ -1,0 +1,77 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Dark slate base — INSPIRE theme */
+  --background: oklch(0.32 0.025 245);
+  --foreground: oklch(0.98 0.005 250);
+
+  /* INSPIRE Pink */
+  --primary: oklch(0.78 0.14 350);
+  --primary-foreground: oklch(0.2 0.02 250);
+  --primary-soft: oklch(0.42 0.08 350);
+
+  /* Slate header/footer — slightly lighter than bg for separation */
+  --secondary: oklch(0.42 0.03 245);
+  --secondary-foreground: oklch(1 0 0);
+
+  --card: oklch(0.40 0.028 245);
+  --card-foreground: oklch(0.98 0.005 250);
+  --popover: oklch(0.40 0.028 245);
+  --popover-foreground: oklch(0.98 0.005 250);
+
+  --muted: oklch(0.38 0.025 245);
+  --muted-foreground: oklch(0.82 0.015 250);
+  --accent: oklch(0.42 0.08 350);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(1 0 0 / 0.12);
+  --input: oklch(1 0 0 / 0.14);
+  --ring: oklch(0.78 0.14 350);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4, h5 { font-family: var(--font-display); }
+}
