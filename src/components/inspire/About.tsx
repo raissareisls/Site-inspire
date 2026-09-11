@@ -6,12 +6,12 @@ const pillars = [
   {
     icon: Target,
     title: "Missão",
-    desc: "Capacitar e dar visibilidade a mulheres em Engenharia de Software, construindo uma comunidade de aprendizado contínuo.",
+    desc: "Capacitar e dar visibilidade a mulheres na área da tecnologia, construindo uma comunidade de aprendizado contínuo.",
   },
   {
     icon: Eye,
     title: "Visão",
-    desc: "Ser referência em formação feminina na área de qualidade e desenvolvimento de software no Norte e Nordeste.",
+    desc: "Ser referência em formação feminina na tecnologia no Norte e Nordeste.",
   },
   {
     icon: Heart,
@@ -76,13 +76,12 @@ export function About() {
           <p className="mt-5 text-lg text-white/75">
             O <span className="font-semibold text-white">INSPIRE</span> é um projeto de extensão
             da Universidade Federal do Ceará (UFC) dedicado a fortalecer a presença feminina
-            em Engenharia de Software. Atuamos formando estudantes, conectando profissionais
+            em diversas áreas da tecnologia. Atuamos formando estudantes, conectando profissionais
             e promovendo ações de inclusão que transformam trajetórias na tecnologia.
           </p>
           <p className="mt-4 text-base text-white/65">
             Reunimos professoras, pesquisadoras e bolsistas em torno de workshops, mentorias,
-            rodas de conversa e iniciativas de pesquisa aplicada — sempre com foco em qualidade
-            de software, liderança e inovação.
+            rodas de conversa e iniciativas de pesquisa aplicada
           </p>
         </Reveal>
 

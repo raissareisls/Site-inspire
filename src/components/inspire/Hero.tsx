@@ -64,8 +64,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg text-white/70">
-            O INSPIRE incentiva a participação de mulheres em Engenharia de Software,
-            promovendo inclusão, diversidade e quebrando barreiras de acesso na tecnologia.
+            O INSPIRE incentiva a participação de mulheres na tecnologia,
+            promovendo inclusão, diversidade e quebrando barreiras de acesso a área.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
