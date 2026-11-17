@@ -1,6 +1,6 @@
 import { ArrowRight, Sparkles, Users, Calendar, Award } from "lucide-react";
 import { motion } from "framer-motion";
-import logo from "@/assets/inspire-logo.png.asset.json";
+import logo from "@/assets/inspire-logo.png";
 
 const stats = [
   { icon: Users, value: "120+", label: "Mulheres impactadas" },
@@ -128,7 +128,7 @@ export function Hero() {
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             className="rounded-3xl border border-white/15 bg-white/5 p-10 shadow-2xl shadow-primary/10 backdrop-blur-xl"
           >
-            <img src={logo.url} alt="Logo INSPIRE" className="h-64 w-64 object-contain" />
+            <img src={logo} alt="Logo INSPIRE" className="h-auto w-64 max-w-full rounded-xl" />
           </motion.div>
         </motion.div>
       </div>

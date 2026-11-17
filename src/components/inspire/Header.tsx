@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/assets/inspire-logo.png.asset.json";
+import logo from "@/assets/inspire-logo.png";
 
 const nav = [
   { label: "Início", href: "#inicio" },
@@ -46,9 +46,9 @@ export function Header() {
           <div className="relative">
             <div className="absolute inset-0 rounded-full bg-primary/40 blur-md transition group-hover:bg-primary/70" />
             <img
-              src={logo.url}
+              src={logo}
               alt="INSPIRE"
-              className="relative h-11 w-11 rounded-full bg-white p-1 transition-transform group-hover:rotate-6"
+              className="relative h-11 w-11 rounded-full object-cover transition-transform group-hover:rotate-6"
             />
           </div>
           <div className="leading-tight">

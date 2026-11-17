@@ -1,5 +1,5 @@
 import { Instagram, Mail, MapPin } from "lucide-react";
-import logo from "@/assets/inspire-logo.png.asset.json";
+import logo from "@/assets/inspire-logo.png";
 
 export function Footer() {
   return (
@@ -7,7 +7,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
           <div className="flex items-center gap-3">
-            <img src={logo.url} alt="INSPIRE" className="h-12 w-12 rounded-full bg-white p-1" />
+            <img src={logo} alt="INSPIRE" className="h-12 w-12 rounded-full object-cover" />
             <span className="font-display text-xl font-bold">INSPIRE</span>
           </div>
           <p className="mt-4 max-w-md text-sm text-white/80">
